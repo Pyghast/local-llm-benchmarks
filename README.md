@@ -8,7 +8,7 @@ Benchmarks and comparisons of locally hosted LLMs running on an NVIDIA GeForce R
 - MOBO: Minisforum BD775i SE
 - RAM: 32GB SODIMM DDR5 (Kingston)
 - GPU: NVIDIA GeForce RTX 5070 12GB
-- OS: Windows 11
+- OS: Windows 11 IoT Enterprise LTSC
 - NVIDIA Driver: 610.88
 - CUDA Toolkit: 12.8
 - cuDNN: 9.24.0
