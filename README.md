@@ -54,6 +54,19 @@ Reducing context from 16384 to 4096 improved GPU offload only slightly, from app
 
 The small change in GPU offload suggests that model size, rather than KV cache usage, is the dominant memory constraint in this setup.
 
+### Qwen3.6 35B-A3B
+
+Qwen3.6 35B-A3B does not fit entirely within the RTX 5070's VRAM and runs with partial GPU offload.
+
+- Model size: 23 GB
+- GPU offload: 41%
+- CPU offload: 59%
+- Generation: 51.86 tok/s
+- Prompt processing: 10.56 tok/s
+- Total benchmark time: 12.15 s
+
+Despite being the largest model tested at 23 GB and having only 41% GPU offload, it achieves a generation speed of 51.86 tok/s.
+
 ### Gemma 4 E4B
 
 Gemma 4 E4B is the lightest of them all and fits entirely on the GPU.
